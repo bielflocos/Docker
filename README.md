@@ -1,16 +1,26 @@
-# ⚡ Nexa Sistemas — Docker & Nginx
+# ⚡ Nexa Sistemas — Desafio Prático Docker (Estudo)
 
-Ambiente conteinerizado para o site institucional da **Nexa Sistemas**, desenvolvido como parte de uma atividade prática de introdução e fixação de **Docker**.
+> 📌 **Aviso:** Este projeto consiste em um **exercício prático para fins puramente acadêmicos e de estudo**, com o objetivo de consolidar fundamentos de conteinerização com Docker e configuração do servidor web Nginx.
 
-A aplicação entrega uma interface estática responsiva, inspirada no design minimalista e analógico do **Notion**, servida por um servidor web **Nginx** executado isoladamente em um container Docker.
+A proposta do laboratório simula uma demanda real para uma empresa fictícia (**Nexa Sistemas**): empacotar uma página institucional estática dentro de um container Docker, mapeando portas de comunicação e gerenciando o ciclo de vida do container via CLI.
 
 ---
 
-## 📁 Estrutura de Arquivos
+## 🎯 Objetivos de Aprendizagem
+
+* Compreender a estrutura e comandos básicos de um `Dockerfile` (`FROM`, `COPY`).
+* Gerar imagens customizadas utilizando o Nginx como base (`docker build`).
+* Executar containers isolados com mapeamento de portas externas (`docker run -p`).
+* Gerenciar paradas, inicializações e remoções de instâncias (`docker stop` / `docker rm`).
+* Praticar versionamento com Git e documentação no GitHub.
+
+---
+
+## 📁 Estrutura do Projeto
 
 ```text
 nexa-docker/
 ├── html/
-│   └── index.html      # Página institucional (Design Notion-style)
+│   └── index.html      # Interface estática estilizada no padrão Notion
 ├── Dockerfile          # Instruções de montagem da imagem Nginx
-└── README.md           # Documentação do projeto
+└── README.md           # Documentação e guia de estudo
